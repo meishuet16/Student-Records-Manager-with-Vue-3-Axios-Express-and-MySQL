@@ -36,3 +36,77 @@ code { background: #ccfbf1; color: #115e59;
 { background: #fee2e2; color: #991b1b; padding: 0.6rem 1rem; 
 border-radius: 6px; } 
 .loading { color: #64748b; font-style: italic; } 
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+.pagination button {
+  padding: 0.4rem 0.9rem;
+  border: 1px solid #cbd5e1;
+  background: white;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #0f172a;
+}
+.pagination button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+.pagination button:not(:disabled):hover {
+  background: #f1f5f9;
+}
+.pagination span {
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+
+.chart-card {
+  background: white;
+  padding: 1rem 1.2rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+.chart-card h3 { margin: 0 0 1rem; }
+
+.stats-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  margin-top: 1rem;
+}
+.stats-table th, .stats-table td {
+  padding: 0.4rem 0.6rem;
+  border-bottom: 1px solid #e2e8f0;
+  text-align: left;
+}
+.stats-table th { background: #f1f5f9; }
+
+
+.btn-outline {
+  padding: 0.4rem 0.9rem;
+  border: 1px solid #0f766e;
+  background: transparent;
+  color: #0f766e;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+.btn-outline:hover {
+  background: #f0fdfb;
+}
+
+/* Extension B: Active badge 可點擊的提示 */
+.badge[title] {
+  transition: opacity 0.15s;
+}
+.badge[title]:hover {
+  opacity: 0.75;
+}
